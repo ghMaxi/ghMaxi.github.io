@@ -1,1 +1,1 @@
-float("3,5")
+print(-"aa")
