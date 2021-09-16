@@ -1,0 +1,8 @@
+pre { font-family: monospace; }
+.code { font-family: monospace; }
+.hidden { color: white; }
+.red { color: red; }
+.define { font-size: 120%; color: red; }
+.definition { border: 1px solid red; padding:5px; }
+.inline { display: inline-block; }
+.in-border { display: inline-block; border: 1px solid black; padding:5px; }
