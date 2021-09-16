@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../lecture.css" media="screen" />
+    <title>Лекция 2 - Объектно-ориентированное программирование.</title>
+</head>
+<body>
+    <h1>Материалы курса Объектно-ориентированное программирование<br>
+Лекция 2 - Классы, конструкторы и цикл жизни объекта.
+
+Метод Конструктор - особый метод класса, описывающий процесс создания нового
+        объекта этого класса.
+        У каждого класса есть "конструктор по умолчанию".
+        Пример:
+            class Student {}
+            static void Main() {
+                int number = 5;
+                Student student = new Student("Вася", Faculty.IT, 260);
+                StudentRegistry.Remember(student);
+            }
+        Имя конструктора всегда совпадает с именем класса.
+
+        class Student{
+            const int BUDGET_THRESHOLD = 270;
+            private string _name;
+            private List<Course> _courses;
+            private bool _budget;
+            public bool IsBudget => _budget;
+            public Student(string name, Faculty faculty, int rating)
+            {
+                _name = name;
+                _courses = faculty.GetStartingCourses();
+                if (rating >= BUDGET_THRESHOLD) _budget = true;
+                else _budget = false;
+            }
+            public Student GetSosed() => null;
+        }
+        class Course {}
+        class Faculty {
+            public List<Course> GetStartingCourses() => null; }
+
+        string line = "skjdhgfdsjkhgfsdkjh";
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
