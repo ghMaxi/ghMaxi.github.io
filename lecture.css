@@ -6,3 +6,9 @@ pre { font-family: monospace; }
 .definition { border: 1px solid red; padding:5px; }
 .inline { display: inline-block; }
 .in-border { display: inline-block; border: 1px solid black; padding:5px; }
+.underConstruction {
+    display: inline-block;
+    padding-left: 30px;
+    background: url(./underConstruction.png) repeat-y;
+    background-size: contain;
+}
