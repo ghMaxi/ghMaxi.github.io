@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/lecture.css" media="screen" />
+    <title>Лекция 2: Высокоуровневые методы программирования</title>
+</head>
+<body>
+<p id="timer" class="underConstruction"></p>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Sep 24, 2021 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timer").innerHTML = "EXPIRED";
+  } else {
+    // Display the result in the element with id="demo"
+    document.getElementById("timer").innerHTML = days + "д " + hours + "ч " + minutes + "м " + seconds + "с ";
+  }
+}, 1000);
+</script>
+<h1>Высокоуровневые методы программирования</h1>
+<h2>Лекция 02: модули стандартной библиотеки Python</h2>
+<ol><li>Сервисы периода выполнения:<pre>
+    sys, atexit, copy, traceback, math, cmath,
+    random, time, calendar, datetime, sets, array, struct,
+    itertools, locale, gettext.</pre></li>
+<li>Поддержка цикла разработки:<pre>
+    pdb, hotshot, profile, unittest, pydoc.
+    docutils, distutils.</pre></li>
+<li>Взаимодействие с ОС (файлы, процессы):<pre>
+    os, os.path, getopt, glob, popen2,
+shutil, select, signal, stat, tempfile.</pre></li>
+<li>Обработка текстов:<pre>
+    string, re, StringIO, codecs, difflib, mmap, sgmllib,
+htmllib, htmlentitydefs. Пакет xml.</pre></li>
+<li>Многопоточные вычисления:<pre>
+    threading, thread, Queue.</pre></li>
+<li>Хранение данных. Архивация:<pre>
+    pickle, shelve, anydbm, gdbm, gzip, zlib,
+zipfile, bz2, csv, tarfile.</pre></li>
+<li>Платформо-зависимые модули:<pre>
+        Для UNIX: commands, pwd, grp, fcntl, resource, termios, readline, rlcompleter
+        Для Windows: msvcrt, _winreg, winsound.</pre></li>
+<li>Поддержка сетевых протоколов:<pre>
+    cgi, Cookie, urllib, urlparse, httplib,
+smtplib, poplib, telnetlib, socket, asyncore. Примеры серверов: SocketServer,
+        BaseHTTPServer, xmlrpclib, asynchat.</pre></li>
+    <li>Поддержка сетевых форматов:<pre>
+        quopri, uu, base64, binhex, binascii,
+        rfc822, mimetools, MimeWriter, multifile, mailbox, email.</pre></li>
+    <li>Самоанализ программ:<pre>
+        parser, symbol, token, keyword, inspect, tokenize,
+        pyclbr, py_compile, compileall, dis, compiler.</pre></li>
+    <li>Графический интерфейс:<pre>
+        Tkinter.</pre></li></ol>
+<p>Документация:</p>
+<ul><li>Английский: <a href="https://docs.python.org/3/library/functions.html">Функции __builtins__</a></li>
+    <li>Английский: <a href="https://docs.python.org/3/library/">Весь __builtins__</a></li>
+    <li>Русский: <a href="https://docs-python.ru/tutorial/vstroennye-funktsii-interpretatora-python/">Функции __builtins__</a></li>
+</ul>
+</body>
+</html>
