@@ -1,0 +1,54 @@
+1. Зарегистрируйтесь на github.com
+2. Скачайте desktop.github.com
+3. Создайте репозиторий в папке Public/Преподаватели/Преображенский/4HLP/ФИО
+4. Скачайте с Интернета стандартный .gitignore для WinForms
+    Положите в папке репозитория
+5. Откройте Visual Studio
+6. Создайте проект Windows Forms в папке репозитория
+7. Продумайте архитектуру приложения "мессенджер" (вместе с преподавателем)
+8. Реализуйте минимальный прототип мессенджера в VS
+9. Продумайте дизайн приложения "мессенджер" (группы)
+10. Обсудите дизайн 
+
+
+
+public class MaxiMessenger1 : ????
+{
+	private Engine _engine;
+	public MaxiMessenger1(Engine engine)
+        {
+		_engine = engine;
+		InitComp
+	}
+}
+
+public void SendMessage(object sender, EventArgs args)
+{
+	richTextBox1.text += textBox1.Text + "\n";
+	_engine.SendMessage(textBox1.Text);
+	textBox1.text = "";
+}
+
+using System.Diagnostics;
+
+
+class Engine
+{
+	internal void SendMessage(string message)
+	{
+		Debug.WriteLine("Движок получил " + message);		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
