@@ -1,0 +1,8 @@
+body { padding-left:15px; font-family: monospace; white-space: pre-wrap; font-size: 2em;}
+h1 { display:inline-block; margin-bottom: 0.25em;}
+h2 {margin-bottom: 0.25em;}
+ol { white-space: normal; }
+ul { white-space: normal; }
+code { display:inline-block; margin: 0.4em; font-size: 1.2em; color: blue; white-space: pre; }
+defblock { margin: 0.25em; padding: 5px; width: 90%; display:inline-block; margin: 0.4 em; border: 2px solid red; }
+def { font-size: 120%; color: red; }
