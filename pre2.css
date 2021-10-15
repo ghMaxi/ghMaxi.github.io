@@ -2,7 +2,7 @@ body { padding-left:15px; font-family: monospace; white-space: pre-wrap; font-si
 h1 { display: inline; margin: 0; }
 h2 { display: inline; margin: 0; }
 h3 { display: inline; margin: 0; }
-img { display: inline-block; width: 50em; }
+img { display: inline-block; zoom: 50%; }
 ol { white-space: normal; }
 ul { white-space: normal; }
 c { color: blue; font-size: 1.2em; }
