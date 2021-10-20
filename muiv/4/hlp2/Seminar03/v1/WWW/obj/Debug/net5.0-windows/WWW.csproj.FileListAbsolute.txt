@@ -1,0 +1,89 @@
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Zolotov\WWW\bin\Debug\net5.0-windows\WWW.exe
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Zolotov\WWW\bin\Debug\net5.0-windows\WWW.deps.json
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Zolotov\WWW\bin\Debug\net5.0-windows\WWW.runtimeconfig.json
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Zolotov\WWW\bin\Debug\net5.0-windows\WWW.runtimeconfig.dev.json
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Zolotov\WWW\bin\Debug\net5.0-windows\WWW.dll
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Zolotov\WWW\bin\Debug\net5.0-windows\ref\WWW.dll
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Zolotov\WWW\bin\Debug\net5.0-windows\WWW.pdb
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Zolotov\WWW\obj\Debug\net5.0-windows\WWW.csproj.AssemblyReference.cache
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Zolotov\WWW\obj\Debug\net5.0-windows\WWW.csproj.GenerateResource.cache
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Zolotov\WWW\obj\Debug\net5.0-windows\WWW.GeneratedMSBuildEditorConfig.editorconfig
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Zolotov\WWW\obj\Debug\net5.0-windows\WWW.AssemblyInfoInputs.cache
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Zolotov\WWW\obj\Debug\net5.0-windows\WWW.AssemblyInfo.cs
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Zolotov\WWW\obj\Debug\net5.0-windows\WWW.csproj.CoreCompileInputs.cache
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Zolotov\WWW\obj\Debug\net5.0-windows\WWW.dll
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Zolotov\WWW\obj\Debug\net5.0-windows\ref\WWW.dll
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Zolotov\WWW\obj\Debug\net5.0-windows\WWW.pdb
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Zolotov\WWW\obj\Debug\net5.0-windows\WWW.genruntimeconfig.cache
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Zolotov\WWW\obj\Debug\net5.0-windows\WWW.Telega.resources
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Sem01\WWW\bin\Debug\net5.0-windows\WWW.exe
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Sem01\WWW\bin\Debug\net5.0-windows\WWW.deps.json
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Sem01\WWW\bin\Debug\net5.0-windows\WWW.runtimeconfig.json
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Sem01\WWW\bin\Debug\net5.0-windows\WWW.runtimeconfig.dev.json
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Sem01\WWW\bin\Debug\net5.0-windows\WWW.dll
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Sem01\WWW\bin\Debug\net5.0-windows\ref\WWW.dll
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Sem01\WWW\bin\Debug\net5.0-windows\WWW.pdb
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Sem01\WWW\obj\Debug\net5.0-windows\WWW.Telega.resources
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Sem01\WWW\obj\Debug\net5.0-windows\WWW.csproj.GenerateResource.cache
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Sem01\WWW\obj\Debug\net5.0-windows\WWW.GeneratedMSBuildEditorConfig.editorconfig
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Sem01\WWW\obj\Debug\net5.0-windows\WWW.AssemblyInfoInputs.cache
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Sem01\WWW\obj\Debug\net5.0-windows\WWW.AssemblyInfo.cs
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Sem01\WWW\obj\Debug\net5.0-windows\WWW.csproj.CoreCompileInputs.cache
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Sem01\WWW\obj\Debug\net5.0-windows\WWW.dll
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Sem01\WWW\obj\Debug\net5.0-windows\ref\WWW.dll
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Sem01\WWW\obj\Debug\net5.0-windows\WWW.pdb
+\\sfile\Public$\Преподаватели\Преображенский М.В\4_HLP\Sem01\WWW\obj\Debug\net5.0-windows\WWW.genruntimeconfig.cache
+C:\Users\студент.EDUMUIV\Desktop\Матвеевский Д.Д\WWW\obj\Debug\net5.0-windows\WWW.csproj.AssemblyReference.cache
+C:\Users\студент.EDUMUIV\Desktop\Матвеевский Д.Д\WWW\obj\Debug\net5.0-windows\WWW.Telega.resources
+C:\Users\студент.EDUMUIV\Desktop\Матвеевский Д.Д\WWW\obj\Debug\net5.0-windows\WWW.csproj.GenerateResource.cache
+C:\Users\студент.EDUMUIV\Desktop\Матвеевский Д.Д\WWW\obj\Debug\net5.0-windows\WWW.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\студент.EDUMUIV\Desktop\Матвеевский Д.Д\WWW\obj\Debug\net5.0-windows\WWW.AssemblyInfoInputs.cache
+C:\Users\студент.EDUMUIV\Desktop\Матвеевский Д.Д\WWW\obj\Debug\net5.0-windows\WWW.AssemblyInfo.cs
+C:\Users\студент.EDUMUIV\Desktop\Матвеевский Д.Д\WWW\obj\Debug\net5.0-windows\WWW.csproj.CoreCompileInputs.cache
+C:\Users\студент.EDUMUIV\Desktop\Матвеевский Д.Д\WWW\obj\Debug\net5.0-windows\WWW.dll
+C:\Users\студент.EDUMUIV\Desktop\Матвеевский Д.Д\WWW\obj\Debug\net5.0-windows\ref\WWW.dll
+C:\Users\студент.EDUMUIV\Desktop\Матвеевский Д.Д\WWW\obj\Debug\net5.0-windows\WWW.pdb
+C:\Users\студент.EDUMUIV\Desktop\Матвеевский Д.Д\WWW\bin\Debug\net5.0-windows\WWW.exe
+C:\Users\студент.EDUMUIV\Desktop\Матвеевский Д.Д\WWW\bin\Debug\net5.0-windows\WWW.deps.json
+C:\Users\студент.EDUMUIV\Desktop\Матвеевский Д.Д\WWW\bin\Debug\net5.0-windows\WWW.runtimeconfig.json
+C:\Users\студент.EDUMUIV\Desktop\Матвеевский Д.Д\WWW\bin\Debug\net5.0-windows\WWW.runtimeconfig.dev.json
+C:\Users\студент.EDUMUIV\Desktop\Матвеевский Д.Д\WWW\bin\Debug\net5.0-windows\WWW.dll
+C:\Users\студент.EDUMUIV\Desktop\Матвеевский Д.Д\WWW\bin\Debug\net5.0-windows\ref\WWW.dll
+C:\Users\студент.EDUMUIV\Desktop\Матвеевский Д.Д\WWW\bin\Debug\net5.0-windows\WWW.pdb
+C:\Users\студент.EDUMUIV\Desktop\Матвеевский Д.Д\WWW\obj\Debug\net5.0-windows\WWW.genruntimeconfig.cache
+C:\Users\Преподаватель\Desktop\4_HLP-02\Матвеевский Д.Д\WWW\bin\Debug\net5.0-windows\WWW.exe
+C:\Users\Преподаватель\Desktop\4_HLP-02\Матвеевский Д.Д\WWW\bin\Debug\net5.0-windows\WWW.deps.json
+C:\Users\Преподаватель\Desktop\4_HLP-02\Матвеевский Д.Д\WWW\bin\Debug\net5.0-windows\WWW.runtimeconfig.json
+C:\Users\Преподаватель\Desktop\4_HLP-02\Матвеевский Д.Д\WWW\bin\Debug\net5.0-windows\WWW.runtimeconfig.dev.json
+C:\Users\Преподаватель\Desktop\4_HLP-02\Матвеевский Д.Д\WWW\bin\Debug\net5.0-windows\WWW.dll
+C:\Users\Преподаватель\Desktop\4_HLP-02\Матвеевский Д.Д\WWW\bin\Debug\net5.0-windows\ref\WWW.dll
+C:\Users\Преподаватель\Desktop\4_HLP-02\Матвеевский Д.Д\WWW\bin\Debug\net5.0-windows\WWW.pdb
+C:\Users\Преподаватель\Desktop\4_HLP-02\Матвеевский Д.Д\WWW\obj\Debug\net5.0-windows\WWW.csproj.AssemblyReference.cache
+C:\Users\Преподаватель\Desktop\4_HLP-02\Матвеевский Д.Д\WWW\obj\Debug\net5.0-windows\WWW.MainWindow.resources
+C:\Users\Преподаватель\Desktop\4_HLP-02\Матвеевский Д.Д\WWW\obj\Debug\net5.0-windows\WWW.csproj.GenerateResource.cache
+C:\Users\Преподаватель\Desktop\4_HLP-02\Матвеевский Д.Д\WWW\obj\Debug\net5.0-windows\WWW.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Преподаватель\Desktop\4_HLP-02\Матвеевский Д.Д\WWW\obj\Debug\net5.0-windows\WWW.AssemblyInfoInputs.cache
+C:\Users\Преподаватель\Desktop\4_HLP-02\Матвеевский Д.Д\WWW\obj\Debug\net5.0-windows\WWW.AssemblyInfo.cs
+C:\Users\Преподаватель\Desktop\4_HLP-02\Матвеевский Д.Д\WWW\obj\Debug\net5.0-windows\WWW.csproj.CoreCompileInputs.cache
+C:\Users\Преподаватель\Desktop\4_HLP-02\Матвеевский Д.Д\WWW\obj\Debug\net5.0-windows\WWW.dll
+C:\Users\Преподаватель\Desktop\4_HLP-02\Матвеевский Д.Д\WWW\obj\Debug\net5.0-windows\ref\WWW.dll
+C:\Users\Преподаватель\Desktop\4_HLP-02\Матвеевский Д.Д\WWW\obj\Debug\net5.0-windows\WWW.pdb
+C:\Users\Преподаватель\Desktop\4_HLP-02\Матвеевский Д.Д\WWW\obj\Debug\net5.0-windows\WWW.genruntimeconfig.cache
+C:\Users\Преподаватель\Desktop\4_HLP_03\WWW\bin\Debug\net5.0-windows\WWW.exe
+C:\Users\Преподаватель\Desktop\4_HLP_03\WWW\bin\Debug\net5.0-windows\WWW.deps.json
+C:\Users\Преподаватель\Desktop\4_HLP_03\WWW\bin\Debug\net5.0-windows\WWW.runtimeconfig.json
+C:\Users\Преподаватель\Desktop\4_HLP_03\WWW\bin\Debug\net5.0-windows\WWW.runtimeconfig.dev.json
+C:\Users\Преподаватель\Desktop\4_HLP_03\WWW\bin\Debug\net5.0-windows\WWW.dll
+C:\Users\Преподаватель\Desktop\4_HLP_03\WWW\bin\Debug\net5.0-windows\ref\WWW.dll
+C:\Users\Преподаватель\Desktop\4_HLP_03\WWW\bin\Debug\net5.0-windows\WWW.pdb
+C:\Users\Преподаватель\Desktop\4_HLP_03\WWW\obj\Debug\net5.0-windows\WWW.csproj.AssemblyReference.cache
+C:\Users\Преподаватель\Desktop\4_HLP_03\WWW\obj\Debug\net5.0-windows\WWW.MainWindow.resources
+C:\Users\Преподаватель\Desktop\4_HLP_03\WWW\obj\Debug\net5.0-windows\WWW.csproj.GenerateResource.cache
+C:\Users\Преподаватель\Desktop\4_HLP_03\WWW\obj\Debug\net5.0-windows\WWW.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Преподаватель\Desktop\4_HLP_03\WWW\obj\Debug\net5.0-windows\WWW.AssemblyInfoInputs.cache
+C:\Users\Преподаватель\Desktop\4_HLP_03\WWW\obj\Debug\net5.0-windows\WWW.AssemblyInfo.cs
+C:\Users\Преподаватель\Desktop\4_HLP_03\WWW\obj\Debug\net5.0-windows\WWW.csproj.CoreCompileInputs.cache
+C:\Users\Преподаватель\Desktop\4_HLP_03\WWW\obj\Debug\net5.0-windows\WWW.dll
+C:\Users\Преподаватель\Desktop\4_HLP_03\WWW\obj\Debug\net5.0-windows\ref\WWW.dll
+C:\Users\Преподаватель\Desktop\4_HLP_03\WWW\obj\Debug\net5.0-windows\WWW.pdb
+C:\Users\Преподаватель\Desktop\4_HLP_03\WWW\obj\Debug\net5.0-windows\WWW.genruntimeconfig.cache
