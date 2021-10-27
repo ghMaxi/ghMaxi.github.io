@@ -82,8 +82,8 @@
         x = 200
         for (var j = 0; j < student.marks.length; j++)
         {
-            let style = student.marks[j] == 0? '' : ' class="'+markClass[student.marks[j] - 3]+'"'+
-                        ' style="top: '+y+'px; left: '+x+'px;'+(eventConfigs[j].width == 40? '' : ' width: '+eventConfigs[j].width+'px;')
+            let style = (student.marks[j] == 0? '' : ' class="'+markClass[student.marks[j] - 3]+'" ')+
+                        'style="top: '+y+'px; left: '+x+'px;'+(eventConfigs[j].width == 40? '' : ' width: '+eventConfigs[j].width+'px;')
             str += '<a href="'+eventConfigs[j].url+'"'+style+'"></a>'
             x += eventConfigs[j].width + 1
         }
