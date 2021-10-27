@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <style>
+        .content { position: relative; }
+        .content div { position: absolute; }
+        .content > div { border: 0px; }
+        .content .filter { left: 0px; width: 200px; line-height: 20px; }
+        .content .events { left: 200px; top: 0px; }
+        .content .marks { top: 82px; left: 0px; }
+
+        .content > div div { height: 40px; width: 40px; line-height: 40px; border: 1px solid black; text-align: center; }
+        .events .month { text-align: left; }
+        .events .event { top: 41px; line-height: 20px; }
+
+        .marks .name { left: 0px; width: 199px; text-align: left; }
+        .marks a { display: block; border: 1px solid black; position: absolute; height: 40px; width: 40px; background: url("../images/blank.png") no-repeat center; background-size: 28px; }
+        .marks .bad { background-image: url("../images/red.png"); }
+        .marks .good { background-image: url("../images/green.png"); }
+        .marks .ok { background-image: url("../images/yellow.png"); }
+    </style>
+    <meta charset="UTF-8">
+    <title>Оценки: Алгоритмизация и программирование</title>
+    <script type="text/javascript" src="./marks.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../_.css" media="screen" />
+</head>
+<body><h1>Оценки курса <a href="./index.html">«Алгоритмизация и Программирование»</a></h1>
+<cite>Преображенский М.В. 2021/22</cite>
+<datalist id="students"></datalist>
+<script language="JavaScript">
+    let data = new dt()
+    let lst = document.getElementById("students")
+    let str = '';
+    for (let i = 0; i < data.students.length; i++)
+        str += '<option value="'+data.students[i].name+'"></option>'
+    lst.innerHTML = str
+</script>
+<h2>Оценки</h2>
+
+<div class="content">
+    <div class="filter">Фильтр по имени(Chrome):<br>
+        <input type="text" name="student" list="students" onchange="SelectStudent()"/>
+        <p style="margin: 20px 0 0 0;">Имя:</p></div>
+    <div class="events"></div>
+    <div class="marks"></div>
+</div>
+<script language="JavaScript">
+    str = ''
+    let x = 0
+    let eventConfigs = Array()
+    for (let i = 0; i < data.calendar.length; i++)
+    {
+        let entry = data.calendar[i]
+        let width = 40
+        let month_width
+        let widthStyle = ''
+        if (entry.events.length == 1)
+        {
+            width *= 2
+            widthStyle = ' width: '+width+'px;'
+            month_width = width
+        } else month_width = (width + 1) * entry.events.length - 1
+        str += '<div class="month" style="left: '+x+'px; width:' + month_width + 'px;">&nbsp'+entry.month+'</div>'
+
+        let events = data.calendar[i].events
+        let mark_id = 0
+        for (var j = 0; j < events.length; j++)
+        {
+            let event = events[j]
+            str += '<div class="event" style="left: '+x+'px;'+widthStyle+'">'+event.day+'<br><a href="'+event.url+'">'+event.type+'</a></div>'
+            x += width + 1
+            eventConfigs.push({width: width, url: event.url})
+        }
+    }
+    document.querySelector(".events").innerHTML = str
+
+    let markClass = ['bad', 'ok', 'good']
+    function OneStudentLine(student, y=0)
+    {
+        let str = ""
+        str += '<div class="name" style="top: '+y+'px;">&nbsp'+student.name+'</div>'
+        x = 200
+        for (var j = 0; j < student.marks.length; j++)
+        {
+            let style = student.marks[j] == 0? '' : ' class="'+markClass[student.marks[j] - 3]+'"'+
+                        ' style="top: '+y+'px; left: '+x+'px;'+(eventConfigs[j].width == 40? '' : ' width: '+eventConfigs[j].width+'px;')
+            str += '<a href="'+eventConfigs[j].url+'"'+style+'"></a>'
+            x += eventConfigs[j].width + 1
+        }
+        return str
+    }
+    function SelectStudent()
+    {
+        let selected = document.querySelector("input").value
+        for (var i = 0; i < data.students.length; i++)
+        {
+            let student = data.students[i]
+            console.log(selected == student.name)
+            if (selected == student.name)
+                 document.querySelector(".marks").innerHTML = OneStudentLine(student)
+        }
+    }
+    function RenderAllStudents()
+    {
+        let str = ""
+        for (var i = 0; i < data.students.length; i++)
+            str += OneStudentLine(data.students[i], i * 41)
+        document.querySelector(".marks").innerHTML = str
+    }
+    RenderAllStudents()
+</script>
+</body>
+</html>
