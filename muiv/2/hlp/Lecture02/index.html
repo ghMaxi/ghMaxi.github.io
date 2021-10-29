@@ -2,79 +2,62 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="/lecture.css" media="screen" />
-    <title>Лекция 2: Высокоуровневые методы программирования</title>
+    <link rel="stylesheet" type="text/css" href="../../../../style.css" media="screen" />
+    <title>Высокоуровневые методы программирования</title>
 </head>
-<body>
-<p id="timer" class="underConstruction"></p>
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Sep 24, 2021 00:00:00").getTime();
+<body><h1>Материалы курса <a href="../">«Высокоуровневые методы программирования»</a></h1>
+<cite>Преображенский М.В. 2021/22</cite>
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+<h2>Лекция 2: "Модули стандартной библиотеки Python"</h2>
 
-  // Get today's date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("timer").innerHTML = "EXPIRED";
-  } else {
-    // Display the result in the element with id="demo"
-    document.getElementById("timer").innerHTML = days + "д " + hours + "ч " + minutes + "м " + seconds + "с ";
-  }
-}, 1000);
-</script>
-<h1>Высокоуровневые методы программирования</h1>
-<h2>Лекция 02: модули стандартной библиотеки Python</h2>
-<ol><li>Сервисы периода выполнения:<pre>
+Сервисы периода выполнения:
     sys, atexit, copy, traceback, math, cmath,
     random, time, calendar, datetime, sets, array, struct,
-    itertools, locale, gettext.</pre></li>
-<li>Поддержка цикла разработки:<pre>
+    itertools, locale, gettext.
+
+Поддержка цикла разработки:
     pdb, hotshot, profile, unittest, pydoc.
-    docutils, distutils.</pre></li>
-<li>Взаимодействие с ОС (файлы, процессы):<pre>
+    docutils, distutils.
+
+Взаимодействие с ОС (файлы, процессы):
     os, os.path, getopt, glob, popen2,
-shutil, select, signal, stat, tempfile.</pre></li>
-<li>Обработка текстов:<pre>
+    shutil, select, signal, stat, tempfile.
+
+Обработка текстов:
     string, re, StringIO, codecs, difflib, mmap, sgmllib,
-htmllib, htmlentitydefs. Пакет xml.</pre></li>
-<li>Многопоточные вычисления:<pre>
-    threading, thread, Queue.</pre></li>
-<li>Хранение данных. Архивация:<pre>
+    htmllib, htmlentitydefs. Пакет xml.
+
+Многопоточные вычисления:
+    threading, thread, Queue.
+
+Хранение данных. Архивация:
     pickle, shelve, anydbm, gdbm, gzip, zlib,
-zipfile, bz2, csv, tarfile.</pre></li>
-<li>Платформо-зависимые модули:<pre>
-        Для UNIX: commands, pwd, grp, fcntl, resource, termios, readline, rlcompleter
-        Для Windows: msvcrt, _winreg, winsound.</pre></li>
-<li>Поддержка сетевых протоколов:<pre>
+    zipfile, bz2, csv, tarfile.
+
+Платформо-зависимые модули:
+    Для UNIX: commands, pwd, grp, fcntl, resource, termios, readline, rlcompleter
+    Для Windows: msvcrt, _winreg, winsound.
+
+Поддержка сетевых протоколов:
     cgi, Cookie, urllib, urlparse, httplib,
-smtplib, poplib, telnetlib, socket, asyncore. Примеры серверов: SocketServer,
-        BaseHTTPServer, xmlrpclib, asynchat.</pre></li>
-    <li>Поддержка сетевых форматов:<pre>
-        quopri, uu, base64, binhex, binascii,
-        rfc822, mimetools, MimeWriter, multifile, mailbox, email.</pre></li>
-    <li>Самоанализ программ:<pre>
-        parser, symbol, token, keyword, inspect, tokenize,
-        pyclbr, py_compile, compileall, dis, compiler.</pre></li>
-    <li>Графический интерфейс:<pre>
-        Tkinter.</pre></li></ol>
-<p>Документация:</p>
-<ul><li>Английский: <a href="https://docs.python.org/3/library/functions.html">Функции __builtins__</a></li>
-    <li>Английский: <a href="https://docs.python.org/3/library/">Весь __builtins__</a></li>
-    <li>Русский: <a href="https://docs-python.ru/tutorial/vstroennye-funktsii-interpretatora-python/">Функции __builtins__</a></li>
-</ul>
+    smtplib, poplib, telnetlib, socket, asyncore. Примеры серверов: SocketServer,
+    BaseHTTPServer, xmlrpclib, asynchat.
+
+Поддержка сетевых форматов:
+    quopri, uu, base64, binhex, binascii,
+    rfc822, mimetools, MimeWriter, multifile, mailbox, email.
+
+Самоанализ программ:
+    parser, symbol, token, keyword, inspect, tokenize,
+    pyclbr, py_compile, compileall, dis, compiler.
+
+Графический интерфейс:
+    Tkinter
+
+
+Документация:
+    Английский: <a href="https://docs.python.org/3/library/functions.html">Функции __builtins__</a>
+    Английский: <a href="https://docs.python.org/3/library/">Весь __builtins__</a>
+    Русский: <a href="https://docs-python.ru/tutorial/vstroennye-funktsii-interpretatora-python/">Функции __builtins__</a>
 </body>
 </html>
