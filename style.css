@@ -8,6 +8,9 @@ ol { white-space: normal; }
 ul { white-space: normal; }
 .content { white-space: normal; }
 c { color: blue; font-size: 1.2em; }
+g { color: green; }
+b { color: blue; }
+r { color: red; }
 def { font-size: 1.2em; color: red; }
 code { display:inline-block; margin: 0.4em; font-size: 1.2em; color: blue; white-space: pre; }
 defblock { margin: 0.25em; padding: 5px; width: 90%; display:inline-block; margin: 0.4 em; border: 2px solid red; }
