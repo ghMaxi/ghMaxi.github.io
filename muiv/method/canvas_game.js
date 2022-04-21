@@ -1,3 +1,19 @@
+alert('js loaded'
+console.log('alert closed')
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+alert("woota");
 function draw_gui(tool)
 {
     tool.fillStyle = 'blue';
@@ -10,3 +26,4 @@ function draw_gui(tool)
 canvas_element = document.getElementsByTagName("canvas")[0];
 draw_tools = canvas_element.getContext("2d");
 draw_gui(draw_tools);
+*/
