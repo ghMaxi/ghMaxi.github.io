@@ -1,40 +1,137 @@
-function ImageResource(url, width, height) {
-    this.image = new Image();
-    this.image.src = url;
-    this.width = width;
-    this.height = height;
+var canvas_element = document.getElementsByTagName("canvas")[0];
+var canvas_rect = canvas_element.getBoundingClientRect();
+var draw_tools = canvas_element.getContext("2d");
+
+function load_image(url) {
+    // функция загружает картинку с заданного адреса и возвращает ссылку на неё
+    new_image = new Image();
+    new_image.src = url;
+    return new_image;
 }
-ImageResource.prototype.draw = function(draw_tools, x, y) {
+var menu_bg = load_image("./images/main_menu_bg.jpg");
+var button = load_image("./images/button.jpg");
+var title_bg = load_image("./images/main_bg.jpg");
+
+function getRandomInt(max) {
+    // Функция вовзращает случайное целое число от 0 меньше max
+    return Math.floor(Math.random() * max);
+}
+
+function boxRandomPixel() {
+    // Функция выделяет квадратиком случайный пиксель на canvas_element
+    var x = getRandomInt(canvas_element.width);
+    var y = getRandomInt(canvas_element.height);
+    draw_tools.strokeRect(x-1, y-1, 3, 3);
+}
+
+function draw_text(x, y, text, fill_style="#00F", font="italic 30pt Times New Roman") {
+    // Функция рисует текст в заданных координатах, с возможностью дополнительно
+    // указать fill_style и font
+    draw_tools.fillStyle = fill_style;
+    draw_tools.font = font;
+    draw_tools.fillText(text, x, y);
+}
+
+function draw_button(x, y, text, text_offset_x=10, w=240, text_offset_y=38, h=50) {
+    // Функция рисует кнопку в заданных координатах с заданным текстом,
+    // с возможностью дополнительно ширину кнопки и выравнивание текста внутри
+    draw_image(button, x, y, w, h);
+    if (text=="Поехали!") {draw_text(x + text_offset_x, y + text_offset_y, text, "#F00");}
+    else {draw_text(x + text_offset_x, y + text_offset_y, text);}
+}
+
+function draw_image(image, x, y, width, height) {
+    // функция рисует загруженные картинки и обрабатывает загрузку незагруженных
+    if (image.complete && image.naturalHeight !== 0) {
+        draw_tools.drawImage(image, x, y, width, height);
+    } else {
+        draw_tools.strokeStyle = "#111";
+        draw_tools.strokeRect(x, y, width, height);
+        draw_tools.fillStyle = "#AAF";
+        draw_tools.fillRect(x, y, width, height);
+        draw_text(x +  width/2 - 15, y + height/2 + 15, "x");
+        image.addEventListener('load', draw, false);
+    }
+}
+
+function draw() {
+    // Функция рисует задний план, заголовок и кнопки
+    draw_image(menu_bg, 0, 0, canvas_element.width, canvas_element.height);
+    draw_image(title_bg, 10, 5, canvas_element.width-20, 80);
+    draw_text(10, 60, "Подземелье Джася!", "#F00", "bold 50pt Times New Roman");
+    draw_button(180, 100, "Поехали!", 40)
+    draw_button(180, 160, "Загрузить", 30)
+    draw_button(180, 220, "Достижения", 10)
+    draw_button(180, 280, "Настройки", 20)
+}
+
+function get_mouse_position(event) {
+    // функция получает из MouseEvent координаты клика с точки зрения canvas
+    return [event.clientX - canvas_rect.left, event.clientY - canvas_rect.top];
+}
+
+function on_mouse_down(event) {
+    // функция обрабатывает нажатии кнопки мыши внутри canvas
+    console.log(get_mouse_position(event));
+}
+
+function on_key_up(event) {
+    // функция обрабатывает отпускание клавиши в окне браузера
+    if (event.code == 'Enter') { console.log("enter"); }
+}
+
+function on_mouse_move(event) {
+    // функция обрабатывает движении мыши внутри canvas
+}
+
+function on_mouse_up(event) {
+    // функция обрабатывает отпускание кнопки мыши внутри canvas
+}
+
+document.addEventListener('keyup', on_key_up);
+canvas_element.addEventListener('mousemove', on_mouse_move);
+canvas_element.addEventListener('mouseup', on_mouse_up);
+canvas_element.addEventListener('mousedown', on_mouse_down);
+
+function run() {
+    // функция вызывает отрисовку приложения
+    draw();
+}
+
+
+run();
+
+
+
+
+
+
+/*function load_image(src) {
+    image = new Image();
+    image.src = src;
+    return image;
+}
+main_menu_bg = load_image("./images/main_menu_bg.jpg");
+button_atlas = load_image("./images/butons.jpg")
+
+LoadedImage.prototype.draw = function(draw_tools, x, y) {
     if (this.image.complete && this.image.naturalHeight > 0) {
         draw_tools.drawImage(this.image, x, y, this.width, this.height);
     } else {
         draw_button(draw_tools, x, y, ":(", this.width/2 - 15, this.width, this.height / 2 + 10, this.height)
     }
 }
-main_menu_bg = new ImageResource("./images/main_menu_bg.jpg", 100, 100);
+
 
 function draw(draw_tools) {
     main_menu_bg.draw(draw_tools, 0, 0);
 }
 
-function draw_button(draw_tools, x, y, text, text_offset_x, w=240, text_offset_y=38, h=50) {
-    draw_tools.strokeStyle = "#111";
-    draw_tools.strokeRect(x, y, w, h);
-    draw_tools.fillStyle = "#AAF";
-    draw_tools.fillRect(x, y, w, h);
-    draw_text(draw_tools, text, x + text_offset_x, y + text_offset_y);
-}
-function draw_text(draw_tools, text, x, y, fill_style="#00F", font="italic 30pt Times New Roman") {
-    draw_tools.fillStyle = fill_style;
-    draw_tools.font = font;
-    draw_tools.fillText(text, x, y);
-}
+
 
 function runProgram() {
   /* функция получает canvas из HTML, достаёт из него инструментарий draw_tools
-     и передаёт его процедуре рисования */
-  canvas_element = document.getElementsByTagName("canvas")[0];
-  draw_tools = canvas_element.getContext("2d");
+     и передаёт его процедуре рисования
   window.requestAnimationFrame(drawLoop);
   function drawLoop() {
       draw(draw_tools);
@@ -42,7 +139,7 @@ function runProgram() {
   }
 }
 
-runProgram();
+runProgram();*/
 
 
 
