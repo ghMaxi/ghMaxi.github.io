@@ -2,6 +2,25 @@ var canvas_element = document.getElementsByTagName("canvas")[0];
 var canvas_rect = canvas_element.getBoundingClientRect();
 var draw_tools = canvas_element.getContext("2d");
 
+function Test(a, b) { this.a = a; this.b = b; this.c="qq2"; }
+Test.prototype.c = 'qq';
+test = new Test('aa', 'bb');
+console.log(test.a+" "+test.b+" "+test.c)
+
+function Rect(x, y, w, h) {
+    // конструктор объекта Rect - координаты (x, y) и размеры (w, h)
+    this.x = x;
+    this.y = y;
+    this.w = w;
+    this.h = h;
+}
+
+Rect.prototype.collide_point = function(point) {
+    // проверка что пара координат (point) оказывается внутри Rect
+    return ((point[0] > this.x && point[0] < this.x + this.w) &&
+            (point[1] > this.y && point[1] < this.y + this.h))
+}
+
 function load_image(url) {
     // функция загружает картинку с заданного адреса и возвращает ссылку на неё
     new_image = new Image();
@@ -35,9 +54,11 @@ function draw_text(x, y, text, fill_style="#00F", font="italic 30pt Times New Ro
 function draw_button(x, y, text, text_offset_x=10, w=240, text_offset_y=38, h=50) {
     // Функция рисует кнопку в заданных координатах с заданным текстом,
     // с возможностью дополнительно ширину кнопки и выравнивание текста внутри
-    draw_image(button, x, y, w, h);
-    if (text=="Поехали!") {draw_text(x + text_offset_x, y + text_offset_y, text, "#F00");}
-    else {draw_text(x + text_offset_x, y + text_offset_y, text);}
+    draw_tools.strokeStyle = "#111";
+    draw_tools.strokeRect(x, y, w, h);
+    draw_tools.fillStyle = "#AAF";
+    draw_tools.fillRect(x, y, w, h);
+    draw_text(x + text_offset_x, y + text_offset_y, text);
 }
 
 function draw_image(image, x, y, width, height) {
@@ -72,7 +93,8 @@ function get_mouse_position(event) {
 
 function on_mouse_down(event) {
     // функция обрабатывает нажатии кнопки мыши внутри canvas
-    console.log(get_mouse_position(event));
+    test_rect = new Rect(180, 100, 240, 50);
+    console.log(test_rect.collide_point(get_mouse_position(event)))
 }
 
 function on_key_up(event) {
