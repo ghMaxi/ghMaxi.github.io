@@ -18,11 +18,24 @@ function Rect(x, y, w, h) {
     // Прямоугольник знает координаты верхнего левого угла, ширину и высоту
     this.x = x; this.y = y; this.w = w; this.h = h;
 }
+Rect.prototype.contains_point = function(point) {
+    return (this.x <= point[0] && this.x + this.w >= point[0] &&
+            this.y <= point[1] && this.y + this.h >= point[1]);
+}
 
 function Button(x, y, text, text_offset_x=10, w=240, text_offset_y=38, h=50) {
     // Кнопка содержит в себе прямоугольник и реагирует на наведение мыши
     this.rect = new Rect(x, y, w, h);
     mouse_over_objects.push(this);
+}
+
+Button.prototype.check_mouseover = function(mouse_position_array) {
+    var mouse_in_rect = this.rect.contains_point(mouse_position_array);
+    if (mouse_in_rect) {
+        console.log(mouse_position_array + " inside " + this.rect);
+    } else {
+        console.log(mouse_position_array + " outside " + this.rect);
+    }
 }
 
 function getRandomInt(max) {
