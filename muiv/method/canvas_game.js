@@ -1,25 +1,7 @@
 var canvas_element = document.getElementsByTagName("canvas")[0];
 var canvas_rect = canvas_element.getBoundingClientRect();
 var draw_tools = canvas_element.getContext("2d");
-
-function Test(a, b) { this.a = a; this.b = b; this.c="qq2"; }
-Test.prototype.c = 'qq';
-test = new Test('aa', 'bb');
-console.log(test.a+" "+test.b+" "+test.c)
-
-function Rect(x, y, w, h) {
-    // конструктор объекта Rect - координаты (x, y) и размеры (w, h)
-    this.x = x;
-    this.y = y;
-    this.w = w;
-    this.h = h;
-}
-
-Rect.prototype.collide_point = function(point) {
-    // проверка что пара координат (point) оказывается внутри Rect
-    return ((point[0] > this.x && point[0] < this.x + this.w) &&
-            (point[1] > this.y && point[1] < this.y + this.h))
-}
+var mouse_over_objects = [];
 
 function load_image(url) {
     // функция загружает картинку с заданного адреса и возвращает ссылку на неё
@@ -27,9 +9,21 @@ function load_image(url) {
     new_image.src = url;
     return new_image;
 }
+
 var menu_bg = load_image("./images/main_menu_bg.jpg");
 var button = load_image("./images/button.jpg");
 var title_bg = load_image("./images/main_bg.jpg");
+
+function Rect(x, y, w, h) {
+    // Прямоугольник знает координаты верхнего левого угла, ширину и высоту
+    this.x = x; this.y = y; this.w = w; this.h = h;
+}
+
+function Button(x, y, text, text_offset_x=10, w=240, text_offset_y=38, h=50) {
+    // Кнопка содержит в себе прямоугольник и реагирует на наведение мыши
+    this.rect = new Rect(x, y, w, h);
+    mouse_over_objects.push(this);
+}
 
 function getRandomInt(max) {
     // Функция вовзращает случайное целое число от 0 меньше max
@@ -93,8 +87,6 @@ function get_mouse_position(event) {
 
 function on_mouse_down(event) {
     // функция обрабатывает нажатии кнопки мыши внутри canvas
-    test_rect = new Rect(180, 100, 240, 50);
-    console.log(test_rect.collide_point(get_mouse_position(event)))
 }
 
 function on_key_up(event) {
@@ -104,6 +96,9 @@ function on_key_up(event) {
 
 function on_mouse_move(event) {
     // функция обрабатывает движении мыши внутри canvas
+    for (var i = 0; i < mouse_over_objects.length; i++) {
+        mouse_over_objects[i].check_mouseover(get_mouse_position(event));
+    }
 }
 
 function on_mouse_up(event) {
@@ -116,6 +111,10 @@ canvas_element.addEventListener('mouseup', on_mouse_up);
 canvas_element.addEventListener('mousedown', on_mouse_down);
 
 function run() {
+    new Button(180, 100, "Поехали!", 40)
+    new Button(180, 160, "Загрузить", 30)
+    new Button(180, 220, "Достижения", 10)
+    new Button(180, 280, "Настройки", 20)
     // функция вызывает отрисовку приложения
     draw();
 }
