@@ -1,0 +1,12 @@
+body { padding-left:15px; font-family: monospace; white-space: pre-wrap; font-size: 1em;}
+h1 { display: inline; margin: 0; }
+h2 { display: inline; margin: 0; }
+h3 { display: inline; margin: 0; }
+img { display: inline-block; zoom: 50%; }
+.smol { display: inline-block; zoom: 12.5%; }
+ol { white-space: normal; }
+ul { white-space: normal; }
+c { color: blue; font-size: 1.2em; }
+def { font-size: 1.2em; color: red; }
+code { display:inline-block; margin: 0.4em; font-size: 1.2em; color: blue; white-space: pre; }
+defblock { margin: 0.25em; padding: 5px; width: 90%; display:inline-block; margin: 0.4 em; border: 2px solid red; }
